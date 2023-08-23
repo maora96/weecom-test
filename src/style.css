@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;800&family=Kanit:wght@400;500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 99.2vw;
+  height: 100vh;
+  background-image: url("../weecom-bg-complete.svg");
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.9rem;
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.title {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 6.2rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 13rem;
+}
+
+.title h1,
+.title h2 {
+  color: white;
+  font-family: "K2D";
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 6.25rem;
+  text-transform: uppercase;
+}
+
+.title h2 {
+  font-weight: 300;
+  margin-top: 1.5rem;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.title h3 {
+  color: white;
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+.title h1 span,
+.title h2 span {
+  color: #cfff11;
+}
+
+.title button,
+#book-a-call button {
+  width: 25rem;
+  height: 5rem;
+  margin-top: 4rem;
+  border-radius: 2.5rem;
+  background: #6c40e9;
+  color: white;
+  align-self: flex-end;
+
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.46rem;
+
+  display: flex;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  gap: 1.5rem;
+  outline: none;
+  border: none;
+}
+
+#about-us {
+  background-image: url("../about-bg.png");
+  background-repeat: no-repeat;
+
+  width: 99vw;
+  margin-bottom: 4rem;
+}
+
+#about-us .container {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 5.6rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 13rem;
+}
+
+#about-us .container .text h2 {
+  font-family: "Kanit";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 6.25rem;
+  text-align: right;
+  color: #333;
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  right: -14rem;
+}
+
+#about-us .container h2 span {
+  color: white;
+}
+
+#about-us .box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#about-us .text {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+#about-us .text p:first-child {
+  margin-top: 2.75rem;
+}
+
+#about-us .paragraphs {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 1;
+  right: -9rem;
+  color: #333;
+  width: 512px;
+}
+
+#about-us .paragraphs p {
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+#about-us .paragraphs p:last-child {
+  margin-top: 2rem;
+}
+
+.clients {
+  margin: 0 auto;
+  margin-top: 6.25rem;
+  width: 100%;
+}
+
+.clients h2 {
+  font-family: "Kanit";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 6.25rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.logos {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#projects {
+  width: 99vw;
+  height: 60rem;
+  background: linear-gradient(180deg, #000916 0%, #070010 100%);
+  padding-top: 3.7rem;
+
+  color: #cfff11;
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#projects h2 {
+  color: #f2f2f2;
+  font-family: "Kanit";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 6.25rem;
+  text-align: center;
+  margin-top: 3.7rem;
+}
+
+#projects .items {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 1.5rem auto;
+}
+
+#projects .item {
+  border-radius: 2.5rem;
+  background: rgba(166, 129, 242, 0.3);
+  backdrop-filter: blur(5.5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#projects .default {
+  width: 15.375rem;
+  height: 7.3125rem;
+}
+
+#projects .item .border {
+  border: 1px solid white;
+  position: absolute;
+  border-radius: 2.5rem;
+  left: 0.62rem;
+}
+
+#projects .saas {
+  width: 10.6875rem;
+  height: 7.3125rem;
+}
+
+#projects .top {
+  margin-top: 3rem;
+}
+
+#projects .top-light {
+  margin-top: 2rem;
+}
+
+#projects .count {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 13rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects .count .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#projects .count .box h2 {
+  color: #fff;
+  /* Display-1 */
+  font-family: "K2D";
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 6.25rem; /* 104.167% */
+}
+
+#projects .count .box h3 {
+  color: #fff;
+  /* Sub-title */
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+#cards {
+  width: 100%;
+  display: flex;
+}
+
+#cards .card {
+  width: 33.33%;
+  height: 28.625rem;
+}
+
+#cards .one {
+  background: url("../luke-chesser-JKUTrJ4vK00-unsplash\ 1.png"),
+    lightgray 50% / cover no-repeat;
+}
+
+#cards .two {
+  background: url("../path-digital-tR0jvlsmCuQ-unsplash\ 1.png"),
+    lightgray 50% / cover no-repeat;
+}
+
+#cards .three {
+  background: url("../brian-mcgowan-WJ0WWNdmJ3Y-unsplash\ 1.png"),
+    lightgray 50% / cover no-repeat;
+}
+
+#cards .card-container {
+  width: 100%;
+  height: 13.4375rem;
+  background: linear-gradient(
+    360deg,
+    rgba(29, 29, 29, 0.73) 0%,
+    rgba(249, 249, 249, 0) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 1.75rem;
+}
+
+#cards .card-container .data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#cards .card {
+  display: flex;
+  align-items: flex-end;
+}
+
+#cards .card .tag {
+  color: #fff;
+  font-family: "Kanit";
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.2875rem;
+
+  display: flex;
+  padding: 0.5rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5rem;
+  border: 1px solid #f2f2f2;
+}
+
+#cards .card p {
+  color: #fff;
+  font-family: "Kanit";
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.2875rem;
+}
+
+#testimonials {
+  background-image: url("../kai-dahms-SbrZdkLtTCY-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials .arrows {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#testimonials .arrows .button:last-child {
+  background: rgba(242, 242, 242, 0.46);
+}
+
+#testimonials .arrows .button {
+  display: flex;
+  border-radius: 2.5rem;
+  border: 1px solid #f5f5f5;
+  padding: 0.5rem;
+}
+
+#testimonials .box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13rem;
+}
+
+#testimonials .box h2 {
+  color: #f2f2f2;
+  font-family: "Kanit";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 6.25rem;
+}
+
+#testimonials .cards-testimonials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.31rem;
+}
+
+#testimonials .testimonial {
+  padding: 2.625rem;
+  width: 25%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+}
+
+#testimonials .testimonial h4 {
+  color: #f2f2f2;
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+}
+
+#testimonials .testimonial p {
+  color: #fff;
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.background {
+  position: absolute;
+  margin-top: -7rem;
+  z-index: -1;
+}
+
+#book-a-call {
+  padding: 10rem 0 5rem 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#book-a-call button {
+  align-self: center;
+}
+
+#book-a-call h2 {
+  color: #4d2c6b;
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5rem;
+  letter-spacing: -0.02rem;
+  width: 75rem;
+}
+
+footer {
+  display: flex;
+  height: 28.125rem;
+  padding: 5rem;
+  align-items: flex-start;
+  position: relative;
+  gap: 6.0625rem;
+  background: #28103e;
+}
+
+footer .info h4 {
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer .info p,
+footer .info span {
+  color: #fff;
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer .info span {
+  color: #e9ce40;
+}
+
+footer .address {
+  width: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .address p {
+  color: #f2f2f2;
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer .address p:first-child {
+  color: #f2c94c;
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer .menu ul li,
+footer .media ul li {
+  list-style: none;
+  margin-top: 1rem;
+
+  color: #f2f2f2;
+
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer .menu ul li:first-child,
+footer .media ul li:first-child {
+  margin-top: 0;
+}
+
+footer .media ul li:first-child {
+  color: #e9ce40;
+  font-family: "Kanit";
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer .menu ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+footer .newsletter h4 {
+  color: #f2f2f2;
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer .newsletter input {
+  border-radius: 2.5rem;
+  border: 2px solid #d9d9d9;
+  padding: 0.8rem 2rem;
+  background: transparent;
+  width: 29rem;
+  height: 3.9rem;
+  color: #d9d9d9;
+  font-family: "Kanit";
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.2875rem;
+}
+
+footer .newsletter input::placeholder {
+  color: #d9d9d9;
+  font-family: "Kanit";
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.2875rem;
+}
+
+footer .newsletter .input-container {
+  position: relative;
+}
+
+footer .newsletter img {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+footer .copyright {
+  color: #b1b1b1;
+  font-family: "Kanit";
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: 1.2rem;
+}
