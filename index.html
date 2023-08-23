@@ -8,17 +8,31 @@
   </head>
   <body>
     <div id="app">
-      <section class="hero">
+      <section class="hero" id="hero">
         <header>
-          <img src="/logo.png" />
+          <img src="/logo.png" class="logo"/>
+          <img src="/logo-mobile.svg" class="logo-mobile"/>
+          <img src="/icon_menu.svg" class="hamburguer-menu" id="hamburguer"/>
           <nav>
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Services</a>
-            <a href="">Works</a>
-            <a href="">Careers</a>
+            <a href="#hero">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#projects">Services</a>
+            <a href="#cards">Works</a>
+            <a href="#testimonials">Careers</a>
             <a href="">Contact Us</a>
           </nav>
+
+          <nav class="mobile-menu hide" id="mobile-menu">
+            <span id="esc">X</span>
+            <a href="#hero">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#projects">Services</a>
+            <a href="#cards">Works</a>
+            <a href="#testimonials">Careers</a>
+            <a href="">Contact Us</a>
+          </nav>
+
+          
         </header>
 
         <div class="title">
@@ -34,6 +48,7 @@
           <div class="box">
             <div class="text">
               <h2>About <span>us</span></h2>
+              <img src="/ah.svg" />
               <div class="paragraphs">
                 <p>
                   Beady agency, a creative digital agency for MVP's digital
@@ -48,7 +63,7 @@
                 </p>
               </div>
             </div>
-            <img src="/ah.svg" />
+           
           </div>
 
           <div class="clients">
@@ -110,6 +125,7 @@
       </section>
 
       <section id="cards">
+      <div class="cards-wrapper">
         <div class="card one">
           <div class="card-container">
             <div class="data">
@@ -134,17 +150,43 @@
             </div>
           </div>
         </div>
+        <div class="card one">
+          <div class="card-container">
+            <div class="data">
+              <div class="tag">Trading Digital App</div>
+              <p>SaaS - 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="card two">
+          <div class="card-container">
+            <div class="data">
+              <div class="tag">Affiliate App</div>
+              <p>SaaS - 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="card three">
+          <div class="card-container">
+            <div class="data">
+              <div class="tag">News Dashboard</div>
+              <p>SaaS - 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
 
       <section id="testimonials">
         <div class="container">
           <div class="arrows">
-            <div class="button"><img src="arrow-left.svg" /></div>
-            <div class="button"><img src="arrow-right.svg" /></div>
+            <div class="button" id="slide-arrow-prev"><img src="arrow-left.svg" /></div>
+            <div class="button" id="slide-arrow-next"><img src="arrow-right.svg" /></div>
           </div>
 
           <div class="box">
             <h2>Testimonials</h2>
+            <div class="testimonials-wrapper">
             <div class="cards-testimonials">
               <div class="testimonial">
                 <h4>
@@ -182,10 +224,10 @@
                 <p>Tony - CEO at Company 1</p>
               </div>
             </div>
-
+          </div>
             <div class="arrows">
-              <div class="button"><img src="arrow-left.svg" /></div>
-              <div class="button"><img src="arrow-right.svg" /></div>
+              <div class="button" id="slide-arrow-prev-test"><img src="arrow-left.svg" /></div>
+              <div class="button" id="slide-arrow-next-test"><img src="arrow-right.svg" /></div>
             </div>
           </div>
         </div>
@@ -214,6 +256,7 @@
           472293849093 </br>Beady Agency Sp. z o. o. Registred in Warsaw, Poland</p>
         </div>
 
+       <div class="menu-media">
         <div class="menu">
           <ul>
             <li><a href="">Home</a></li>
@@ -235,6 +278,7 @@
            
           </ul>
         </div>
+       </div>
 
         <div class="newsletter">
           <h4>Join the newsletter!</h4>

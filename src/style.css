@@ -4,12 +4,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.hide {
+  display: none;
 }
 
 .hero {
   width: 99.2vw;
   height: 100vh;
   background-image: url("../weecom-bg-complete.svg");
+}
+
+.hamburguer-menu {
+  display: none;
 }
 
 header {
@@ -124,7 +137,7 @@ nav a {
   position: absolute;
   z-index: 1;
   width: 300px;
-  right: -14rem;
+  right: 39.5rem;
 }
 
 #about-us .container h2 span {
@@ -154,7 +167,7 @@ nav a {
   align-items: flex-end;
   position: absolute;
   z-index: 1;
-  right: -9rem;
+  right: 45rem;
   color: #333;
   width: 512px;
 }
@@ -275,17 +288,15 @@ nav a {
 
 #projects .count .box h2 {
   color: #fff;
-  /* Display-1 */
   font-family: "K2D";
   font-size: 6rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 6.25rem; /* 104.167% */
+  line-height: 6.25rem;
 }
 
 #projects .count .box h3 {
   color: #fff;
-  /* Sub-title */
   font-family: "Kanit";
   font-size: 2rem;
   font-style: normal;
@@ -294,13 +305,30 @@ nav a {
 }
 
 #cards {
+  position: relative;
+  overflow: hidden;
+}
+
+#cards .cards-wrapper {
   width: 100%;
   display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#cards .cards-wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 #cards .card {
   width: 33.33%;
   height: 28.625rem;
+  /* width: 100%;
+  height: 100%; */
+  flex: 1 0 33%;
 }
 
 #cards .one {
@@ -376,6 +404,11 @@ nav a {
   flex-direction: column;
 }
 
+#testimonials .testimonials-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 #testimonials .container {
   width: 90%;
   margin: 0 auto;
@@ -421,11 +454,23 @@ nav a {
   justify-content: space-between;
   width: 100%;
   gap: 1.31rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+  /* WebKit */
+}
+
+#testimonials .cards-testimonials::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 #testimonials .testimonial {
   padding: 2.625rem;
-  width: 25%;
+  width: 25rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
@@ -560,6 +605,11 @@ footer .menu ul li a {
   color: #f2f2f2;
 }
 
+footer .menu-media {
+  display: flex;
+  gap: 6rem;
+}
+
 footer .newsletter {
   display: flex;
   flex-direction: column;
@@ -615,4 +665,334 @@ footer .copyright {
   font-weight: 400;
   position: absolute;
   bottom: 1.2rem;
+}
+
+@media (max-width: 576px) {
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background: #28103e;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .background {
+    width: 100%;
+  }
+
+  .mobile-menu span {
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .hamburguer-menu {
+    display: block;
+  }
+
+  .title {
+    padding-right: 0;
+    margin-top: 2rem;
+  }
+
+  .title h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  .title h2 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .title h3 {
+    color: #fff;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    width: 200px;
+  }
+
+  .title button {
+    width: 13rem;
+    height: auto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.23rem;
+    margin-top: 1rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .title button img {
+    height: 1rem;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  #about-us {
+    width: 100vw;
+  }
+
+  #about-us .container {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 93%;
+  }
+
+  #about-us .container .text h2 {
+    position: static;
+    font-size: 2rem;
+    text-align: left;
+    line-height: normal;
+  }
+
+  #about-us .container h2 span {
+    color: #333;
+  }
+
+  #about-us .box .text img {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  #about-us .paragraphs {
+    position: static;
+    margin-top: 1rem;
+    width: auto;
+    font-size: 1rem;
+  }
+
+  #about-us .text p:first-child {
+    margin-top: 0;
+  }
+
+  #about-us .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .clients {
+    margin-top: 4.25rem;
+  }
+
+  .clients h2 {
+    font-size: 2rem;
+
+    text-align: center;
+  }
+
+  #projects {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  #projects h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  #projects .count .box h2 {
+    font-size: 4rem;
+  }
+
+  #projects .count .box h3 {
+    font-size: 1.25rem;
+  }
+
+  #projects .item .border {
+    left: 0;
+    border-radius: 1.875rem;
+  }
+
+  #projects .item {
+    font-size: 1.25rem;
+    border-radius: 1.875rem;
+  }
+
+  #projects .default {
+    width: 13.375rem;
+    height: 5.3125rem;
+  }
+
+  #projects .saas {
+    width: 8.6875rem;
+    height: 5.3125rem;
+  }
+
+  #projects .top,
+  #projects .top-light {
+    margin-top: 0;
+  }
+
+  #projects .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  #projects .count {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects .count .box {
+    align-items: center;
+  }
+
+  #testimonials .arrows {
+    align-self: center;
+  }
+
+  #testimonials .box {
+    margin-top: 0;
+  }
+
+  #testimonials .box h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #cards {
+    flex-direction: column;
+  }
+
+  #cards .card {
+    height: 16rem;
+  }
+
+  #cards .one,
+  #cards .two,
+  #cards .three {
+    background-size: cover;
+    width: 100%;
+  }
+
+  #cards .card-container .data {
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b b";
+  }
+
+  #cards .data .tag {
+    grid-area: b;
+    padding: 0.3rem;
+    margin-top: 1rem;
+    width: 16rem;
+    font-size: 1rem;
+  }
+
+  #cards .data p {
+    grid-area: a;
+    font-size: 1rem;
+  }
+
+  #testimonials .cards-testimonials {
+    padding-left: 2rem;
+  }
+
+  #testimonials .testimonial {
+    height: auto;
+    width: 24rem;
+    padding: 1.5rem;
+  }
+
+  #testimonials .testimonial h4 {
+    font-size: 1rem;
+  }
+
+  #book-a-call button {
+    width: 15rem;
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.41rem;
+    height: 3rem;
+  }
+
+  #book-a-call h2 {
+    width: 90%;
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  #book-a-call button img {
+    width: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 2.5rem;
+  }
+
+  footer .menu-media {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  footer .menu,
+  footer .media {
+    width: 50%;
+  }
+
+  footer .newsletter {
+    display: none;
+  }
+
+  footer .info p {
+    margin-top: 1rem;
+  }
+
+  footer .info p,
+  footer .info span {
+    text-align: center;
+    display: block;
+  }
+
+  footer .address p {
+    text-align: center;
+  }
 }
