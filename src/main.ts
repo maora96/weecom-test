@@ -1,4 +1,5 @@
 import "./style.css";
+import "./variables.css";
 
 const hamburguer = document.querySelector("#hamburguer");
 const mobileMenu = document.querySelector("#mobile-menu");

@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #6c40e9;
+  --secondary-color: #cfff11;
+  --dark-gray: #333333;
+  --light-gray: #d9d9d9;
+  --white-gray: #f2f2f2;
+  --primary-dark-color: #4d2c6b;
+  --yellow: #f2c94c;
+  --copy-gray: #b1b1b1;
+
+  --color-white-fixed: #ffffff;
+
+  --primary-font: "Kanit", sans-serif;
+  --secondary-font: "K2D", sans-serif;
+}

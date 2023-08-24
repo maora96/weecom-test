@@ -84,40 +84,40 @@
       <section id="projects">
         <h2>Our Projects</h2>
         <div class="items">
-          <div class="item default">
+          <div class="item default" id="web">
             <div class="border default"></div>
             Web Design
           </div>
 
-          <div class="item default top">
+          <div class="item default top" id="mobile">
             <div class="border default"></div>
             Mobile Apps
           </div>
 
-          <div class="item saas">
+          <div class="item saas" id="saas">
             <div class="border saas"></div>
             Saas
           </div>
 
-          <div class="item default top">
+          <div class="item default top" id="design">
             <div class="border default"></div>
             Design System
           </div>
 
-          <div class="item saas top-light">
+          <div class="item saas top-light" id="brand">
             <div class="border saas"></div>
             Brand
           </div>
-          <!-- <img src="web-design.svg" /> -->
+
         </div>
 
         <div class="count">
-          <div class="box">
+          <div class="box" id="completed">
             <h2>156</h2>
             <h3>Completed Projects</h3>
           </div>
 
-          <div class="box">
+          <div class="box" id="awards">
             <h2>30</h2>
             <h3>Awards & Features</h3>
           </div>
@@ -126,7 +126,7 @@
 
       <section id="cards">
       <div class="cards-wrapper">
-        <div class="card one">
+        <div class="card one" id="one">
           <div class="card-container">
             <div class="data">
               <div class="tag">Trading Digital App</div>
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="card two">
+        <div class="card two" id="two">
           <div class="card-container">
             <div class="data">
               <div class="tag">Affiliate App</div>
@@ -142,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="card three">
+        <div class="card three" id="three">
           <div class="card-container">
             <div class="data">
               <div class="tag">News Dashboard</div>
@@ -150,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="card one">
+        <div class="card fourth">
           <div class="card-container">
             <div class="data">
               <div class="tag">Trading Digital App</div>
@@ -158,7 +158,7 @@
             </div>
           </div>
         </div>
-        <div class="card two">
+        <div class="card fifth">
           <div class="card-container">
             <div class="data">
               <div class="tag">Affiliate App</div>
@@ -166,7 +166,7 @@
             </div>
           </div>
         </div>
-        <div class="card three">
+        <div class="card sixth">
           <div class="card-container">
             <div class="data">
               <div class="tag">News Dashboard</div>
@@ -179,7 +179,7 @@
 
       <section id="testimonials">
         <div class="container">
-          <div class="arrows">
+          <div class="arrows" id="arrows">
             <div class="button" id="slide-arrow-prev"><img src="arrow-left.svg" /></div>
             <div class="button" id="slide-arrow-next"><img src="arrow-right.svg" /></div>
           </div>
@@ -188,7 +188,7 @@
             <h2>Testimonials</h2>
             <div class="testimonials-wrapper">
             <div class="cards-testimonials">
-              <div class="testimonial">
+              <div class="testimonial" id="testimonial-one">
                 <h4>
                   "The team were very cooperative and quick. They worked well
                   with our the tight schedule and were always on top"
@@ -197,7 +197,7 @@
                 <p>Tony - CEO at Company 1</p>
               </div>
 
-              <div class="testimonial">
+              <div class="testimonial" id="testimonial-two">
                 <h4>
                   "They provided their creative creative and ideas yet still
                   gicing the best solution to our company's goals."
@@ -206,7 +206,7 @@
                 <p>Douglas - CEO at Company 2</p>
               </div>
 
-              <div class="testimonial">
+              <div class="testimonial" id="testimonial-three">
                 <h4>
                   "Their communication and flexibility as are very clear,
                   interesting and the most impressive."
@@ -215,7 +215,7 @@
                 <p>Michael Pat - CEO at Company 3</p>
               </div>
 
-              <div class="testimonial">
+              <div class="testimonial" id="testimonial-fourth">
                 <h4>
                   "The team were very cooperative and quick. They worked well
                   with our the tight schedule and were always on top"
@@ -225,7 +225,7 @@
               </div>
             </div>
           </div>
-            <div class="arrows">
+            <div class="arrows" id="testimonial-arrows">
               <div class="button" id="slide-arrow-prev-test"><img src="arrow-left.svg" /></div>
               <div class="button" id="slide-arrow-next-test"><img src="arrow-right.svg" /></div>
             </div>
@@ -291,5 +291,123 @@
       </footer>
     </div>
     <script type="module" src="/src/main.ts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+      gsap.from(".title > h1",{ y: 200, x: - 100, duration: 2,opacity: 0  })
+      gsap.from(".title > h2",{ y: 200, x: 100, duration: 2, delay: 1, opacity: 0 })
+
+      gsap.from(".title > h3",{ duration: 1, delay: 3, opacity: 0 })
+
+      gsap.from(".title > button",{ duration: 1, delay: 3, opacity: 0 })
+
+      gsap.from(".text > h2",{ duration: 1, x: 200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".paragraphs",
+      }, })
+
+
+      gsap.from(".text > img",{ duration: 1, x: 200, delay: 2, opacity: 0,scrollTrigger: {
+        trigger: ".paragraphs",
+      }, })
+      gsap.from(".text > .paragraphs",{ duration: 1, x: -200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".paragraphs",
+      }, })
+
+      gsap.from(".clients",{ duration: 1, y: 200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".logos",
+      }, })
+      gsap.from(".logos",{ duration: 1, y: 200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".logos",
+      }, })
+
+       gsap.from("#projects > h2",{ duration: 1, y: 200, delay: 1, opacity: 0, scrollTrigger: {
+        trigger: "#projects > h2",
+      }, })
+
+      gsap.from("#web", { x: 200, duration: 1, opacity: 0, scrollTrigger: {
+        trigger: ".items"
+      } });
+      gsap.from("#mobile", { x: 200, duration: 1, opacity: 0, scrollTrigger: {
+        trigger: ".items"
+      } });
+      gsap.from("#saas", { x: 200, duration: 1, opacity: 0,  scrollTrigger: {
+        trigger: ".items"
+      } });
+      gsap.from("#design", { x: 200, duration: 1, opacity: 0, scrollTrigger: {
+        trigger: ".items"
+      } });
+      gsap.from("#brand", { x: 200, duration: 1, opacity: 0, scrollTrigger: {
+        trigger: ".items"
+      } });
+
+      gsap.from("#completed > h2",{ duration: 1, y: 200, delay: 1, opacity: 0, scrollTrigger: {
+        trigger: ".count",
+      }, })
+
+      gsap.from("#completed > h3",{ duration: 1, y: 200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".box",
+      }, })
+
+      gsap.from("#awards > h2",{ duration: 1, y: 200, delay: 1, opacity: 0, scrollTrigger: {
+        trigger: ".count",
+      }, })
+
+      gsap.from("#awards > h3",{ duration: 1, y: 200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".box",
+      }, })
+
+      gsap.from("#one",{ duration: 1, x: 200, delay: 1, opacity: 0, scrollTrigger: {
+        trigger: ".cards-wrapper",
+      }, })
+
+      gsap.from("#two",{ duration: 1, x: 200, delay: 2, opacity: 0, scrollTrigger: {
+        trigger: ".cards-wrapper",
+      }, })
+
+      gsap.from("#three",{ duration: 1, x: 200, delay: 3, opacity: 0, scrollTrigger: {
+        trigger: ".cards-wrapper",
+      }, })
+
+      gsap.from("#arrows",{ duration: 1, delay: 4, opacity: 0, scrollTrigger: {
+        trigger: ".cards-wrapper",
+      }, })
+
+      gsap.from(".box > h2",{ duration: 1, delay: 1, y: 200, opacity: 0, scrollTrigger: {
+        trigger: ".testimonials-wrapper",
+      }, })
+
+      gsap.from("#testimonial-one",{ duration: 1, delay: 2, x: 200, opacity: 0, scrollTrigger: {
+        trigger: ".testimonials-wrapper",
+      }, })
+
+      gsap.from("#testimonial-two",{ duration: 1, delay: 3, x: 200, opacity: 0, scrollTrigger: {
+        trigger: ".testimonials-wrapper",
+      }, })
+
+      gsap.from("#testimonial-three",{ duration: 1, delay: 4, x: 200, opacity: 0, scrollTrigger: {
+        trigger: ".testimonials-wrapper",
+      }, })
+
+      gsap.from("#testimonial-fourth",{ duration: 1, delay: 5, x: 200, opacity: 0, scrollTrigger: {
+        trigger: ".testimonials-wrapper",
+      }, })
+
+      gsap.from("#testimonial-arrows",{ duration: 1, delay: 6, opacity: 0, scrollTrigger: {
+        trigger: ".testimonials-wrapper",
+      }, })
+
+      gsap.from("#book-a-call > h2",{ duration: 1, delay: 1, y: 200, opacity: 0, scrollTrigger: {
+        trigger: "#book-a-call",
+      }, })
+
+      gsap.from("#book-a-call > button",{ duration: 1, delay: 2, y: 200, opacity: 0, scrollTrigger: {
+        trigger: "#book-a-call",
+      }, })
+
+      gsap.from("footer",{ duration: 1, delay: 1, y: 200, opacity: 0, scrollTrigger: {
+        trigger: "footer",
+      }, })
+    </script>
   </body>
 </html>

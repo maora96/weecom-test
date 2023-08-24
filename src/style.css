@@ -331,17 +331,20 @@ nav a {
   flex: 1 0 33%;
 }
 
-#cards .one {
+#cards .one,
+#cards .fourth {
   background: url("../luke-chesser-JKUTrJ4vK00-unsplash\ 1.png"),
     lightgray 50% / cover no-repeat;
 }
 
-#cards .two {
+#cards .two,
+#cards .fifth {
   background: url("../path-digital-tR0jvlsmCuQ-unsplash\ 1.png"),
     lightgray 50% / cover no-repeat;
 }
 
-#cards .three {
+#cards .three,
+#cards .sixth {
   background: url("../brian-mcgowan-WJ0WWNdmJ3Y-unsplash\ 1.png"),
     lightgray 50% / cover no-repeat;
 }
