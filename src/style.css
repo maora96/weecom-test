@@ -7,21 +7,21 @@
   scroll-behavior: smooth;
 }
 
-.logo-mobile {
-  display: none;
-}
-
 .hide {
   display: none;
 }
 
-.hero {
+.header {
   width: 99.2vw;
   height: 100vh;
   background-image: url("../weecom-bg-complete.svg");
 }
 
-.hamburguer-menu {
+.header__logo--mobile {
+  display: none;
+}
+
+.header__hamburguer_menu {
   display: none;
 }
 
@@ -44,11 +44,11 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
-.title {
+.hero__title {
   width: 85%;
   margin: 0 auto;
   margin-top: 6.2rem;
@@ -57,9 +57,9 @@ nav a {
   padding-right: 13rem;
 }
 
-.title h1,
-.title h2 {
-  color: white;
+.hero__title h1,
+.hero__title h2 {
+  color: var(--white);
   font-family: "K2D";
   font-size: 6rem;
   font-weight: 800;
@@ -67,34 +67,34 @@ nav a {
   text-transform: uppercase;
 }
 
-.title h2 {
+.hero__title h2 {
   font-weight: 300;
   margin-top: 1.5rem;
   align-self: flex-end;
   text-align: right;
 }
 
-.title h3 {
-  color: white;
+.hero__title h3 {
+  color: var(--white);
   font-family: "Kanit";
   font-size: 2rem;
   font-weight: 500;
   align-self: flex-end;
 }
 
-.title h1 span,
-.title h2 span {
-  color: #cfff11;
+.hero__title h1 span,
+.hero__title h2 span {
+  color: var(--secondary-color);
 }
 
-.title button,
+.hero__title button,
 #book-a-call button {
   width: 25rem;
   height: 5rem;
   margin-top: 4rem;
   border-radius: 2.5rem;
-  background: #6c40e9;
-  color: white;
+  background: var(--primary-color);
+  color: var(--white);
   align-self: flex-end;
 
   font-family: "Kanit";
@@ -118,7 +118,7 @@ nav a {
   margin-bottom: 4rem;
 }
 
-#about-us .container {
+.about_us__container {
   width: 85%;
   margin: 0 auto;
   margin-top: 5.6rem;
@@ -127,40 +127,40 @@ nav a {
   padding-right: 13rem;
 }
 
-#about-us .container .text h2 {
+.about_us__text h2 {
   font-family: "Kanit";
   font-size: 4rem;
   font-weight: 500;
   line-height: 6.25rem;
   text-align: right;
-  color: #333;
+  color: var(--dark-gray);
   position: absolute;
   z-index: 1;
   width: 300px;
   right: 39.5rem;
 }
 
-#about-us .container h2 span {
-  color: white;
+.about_us__container h2 span {
+  color: var(--white);
 }
 
-#about-us .box {
+.about_us__box {
   display: flex;
   justify-content: flex-end;
 }
 
-#about-us .text {
+.about_us__text {
   position: relative;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
 }
 
-#about-us .text p:first-child {
+.about_us__text p:first-child {
   margin-top: 2.75rem;
 }
 
-#about-us .paragraphs {
+.about_us__paragraphs {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -168,11 +168,11 @@ nav a {
   position: absolute;
   z-index: 1;
   right: 45rem;
-  color: #333;
+  color: var(--dark-gray);
   width: 512px;
 }
 
-#about-us .paragraphs p {
+.about_us__paragraphs p {
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
@@ -180,17 +180,17 @@ nav a {
   text-transform: uppercase;
 }
 
-#about-us .paragraphs p:last-child {
+.about_us__paragraphs p:last-child {
   margin-top: 2rem;
 }
 
-.clients {
+.about_us__clients {
   margin: 0 auto;
   margin-top: 6.25rem;
   width: 100%;
 }
 
-.clients h2 {
+.about_us__clients h2 {
   font-family: "Kanit";
   font-size: 4rem;
   font-weight: 500;
@@ -199,7 +199,7 @@ nav a {
   margin: 0 auto;
 }
 
-.logos {
+.about_us__logos {
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -212,14 +212,14 @@ nav a {
   background: linear-gradient(180deg, #000916 0%, #070010 100%);
   padding-top: 3.7rem;
 
-  color: #cfff11;
+  color: var(--secondary-color);
   font-family: "Kanit";
   font-size: 2rem;
   font-weight: 500;
 }
 
 #projects h2 {
-  color: #f2f2f2;
+  color: var(--white-gray);
   font-family: "Kanit";
   font-size: 4rem;
   font-weight: 500;
@@ -228,14 +228,14 @@ nav a {
   margin-top: 3.7rem;
 }
 
-#projects .items {
+.projects__items {
   display: flex;
   justify-content: space-between;
   width: 75%;
   margin: 1.5rem auto;
 }
 
-#projects .item {
+.projects__item {
   border-radius: 2.5rem;
   background: rgba(166, 129, 242, 0.3);
   backdrop-filter: blur(5.5px);
@@ -251,8 +251,8 @@ nav a {
   height: 7.3125rem;
 }
 
-#projects .item .border {
-  border: 1px solid white;
+.projects__item .border {
+  border: 1px solid var(--white);
   position: absolute;
   border-radius: 2.5rem;
   left: 0.62rem;
@@ -271,7 +271,7 @@ nav a {
   margin-top: 2rem;
 }
 
-#projects .count {
+.projects__count {
   width: 40%;
   margin: 0 auto;
   margin-top: 13rem;
@@ -279,15 +279,15 @@ nav a {
   justify-content: space-between;
 }
 
-#projects .count .box {
+.projects__box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-#projects .count .box h2 {
-  color: #fff;
+.projects__box h2 {
+  color: var(--white);
   font-family: "K2D";
   font-size: 6rem;
   font-style: normal;
@@ -295,8 +295,8 @@ nav a {
   line-height: 6.25rem;
 }
 
-#projects .count .box h3 {
-  color: #fff;
+.projects__box h3 {
+  color: var(--white);
   font-family: "Kanit";
   font-size: 2rem;
   font-style: normal;
@@ -309,7 +309,7 @@ nav a {
   overflow: hidden;
 }
 
-#cards .cards-wrapper {
+.cards__wrapper {
   width: 100%;
   display: flex;
   overflow: scroll;
@@ -318,16 +318,14 @@ nav a {
   -ms-overflow-style: none;
 }
 
-#cards .cards-wrapper::-webkit-scrollbar {
+.cards__wrapper::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-#cards .card {
+.cards__card {
   width: 33.33%;
   height: 28.625rem;
-  /* width: 100%;
-  height: 100%; */
   flex: 1 0 33%;
 }
 
@@ -349,7 +347,7 @@ nav a {
     lightgray 50% / cover no-repeat;
 }
 
-#cards .card-container {
+.card__container {
   width: 100%;
   height: 13.4375rem;
   background: linear-gradient(
@@ -362,20 +360,20 @@ nav a {
   padding: 1.75rem;
 }
 
-#cards .card-container .data {
+.card__data {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-#cards .card {
+.cards__card {
   display: flex;
   align-items: flex-end;
 }
 
-#cards .card .tag {
-  color: #fff;
+.card__tag {
+  color: var(--white);
   font-family: "Kanit";
   font-size: 1.25rem;
   font-weight: 400;
@@ -386,11 +384,11 @@ nav a {
   justify-content: center;
   align-items: center;
   border-radius: 2.5rem;
-  border: 1px solid #f2f2f2;
+  border: 1px solid var(--white-gray);
 }
 
-#cards .card p {
-  color: #fff;
+.cards__card p {
+  color: var(--white);
   font-family: "Kanit";
   font-size: 1.25rem;
   font-weight: 400;
@@ -407,19 +405,19 @@ nav a {
   flex-direction: column;
 }
 
-#testimonials .testimonials-wrapper {
+.testimonials__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-#testimonials .container {
+.testimonials__container {
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-#testimonials .arrows {
+.testimonials__arrows {
   display: flex;
   gap: 1rem;
   align-self: flex-end;
@@ -427,32 +425,32 @@ nav a {
   margin-bottom: 4rem;
 }
 
-#testimonials .arrows .button:last-child {
+.arrows__button:last-child {
   background: rgba(242, 242, 242, 0.46);
 }
 
-#testimonials .arrows .button {
+.arrows__button {
   display: flex;
   border-radius: 2.5rem;
-  border: 1px solid #f5f5f5;
+  border: 1px solid var(--almost-whitey);
   padding: 0.5rem;
 }
 
-#testimonials .box {
+.testimonials__box {
   display: flex;
   flex-direction: column;
   margin-top: 13rem;
 }
 
-#testimonials .box h2 {
-  color: #f2f2f2;
+.testimonials__box h2 {
+  color: var(--white-gray);
   font-family: "Kanit";
   font-size: 4rem;
   font-weight: 500;
   line-height: 6.25rem;
 }
 
-#testimonials .cards-testimonials {
+.testimonials__cards {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -460,18 +458,16 @@ nav a {
   overflow: scroll;
   scroll-behavior: smooth;
 
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-
-  /* WebKit */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-#testimonials .cards-testimonials::-webkit-scrollbar {
+.testimonials__cards::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-#testimonials .testimonial {
+.testimonials__card {
   padding: 2.625rem;
   width: 25rem;
   height: 30rem;
@@ -483,22 +479,22 @@ nav a {
   backdrop-filter: blur(20px);
 }
 
-#testimonials .testimonial h4 {
-  color: #f2f2f2;
+.testimonials__card h4 {
+  color: var(--white-gray);
   font-family: "Kanit";
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.08rem;
 }
 
-#testimonials .testimonial p {
-  color: #fff;
+.testimonials__card p {
+  color: var(--white);
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
 }
 
-.background {
+.testimonials__background {
   position: absolute;
   margin-top: -7rem;
   z-index: -1;
@@ -518,7 +514,7 @@ nav a {
 }
 
 #book-a-call h2 {
-  color: #4d2c6b;
+  color: var(--purple);
   text-align: center;
   font-family: "Kanit";
   font-size: 4rem;
@@ -535,134 +531,134 @@ footer {
   align-items: flex-start;
   position: relative;
   gap: 6.0625rem;
-  background: #28103e;
+  background: var(--dark-purple);
 }
 
-footer .info h4 {
-  color: #f2f2f2;
+.footer__info h4 {
+  color: var(--white-gray);
   text-align: center;
   font-family: "Kanit";
   font-size: 2rem;
   font-weight: 500;
 }
 
-footer .info p,
-footer .info span {
-  color: #fff;
+.footer__info p,
+.footer__info span {
+  color: var(--white);
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
 }
 
-footer .info span {
-  color: #e9ce40;
+.footer__info span {
+  color: var(--dark-gold);
 }
 
-footer .address {
+.footer__address {
   width: 12.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-footer .address p {
-  color: #f2f2f2;
+.footer__address p {
+  color: var(--white-gray);
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
 }
 
-footer .address p:first-child {
-  color: #f2c94c;
+.footer__address p:first-child {
+  color: var(--dark-gold);
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
 }
 
-footer .menu ul li,
-footer .media ul li {
+.footer__menu ul li,
+.footer__media ul li {
   list-style: none;
   margin-top: 1rem;
 
-  color: #f2f2f2;
+  color: var(--white-gray);
 
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
 }
 
-footer .menu ul li:first-child,
-footer .media ul li:first-child {
+.footer__menu ul li:first-child,
+.footer__media ul li:first-child {
   margin-top: 0;
 }
 
-footer .media ul li:first-child {
-  color: #e9ce40;
+.footer__media ul li:first-child {
+  color: var(--dark-gold);
   font-family: "Kanit";
   font-size: 1rem;
   font-weight: 400;
 }
 
-footer .menu ul li a {
+.footer__menu ul li a {
   text-decoration: none;
-  color: #f2f2f2;
+  color: var(--white-gray);
 }
 
-footer .menu-media {
+.footer__menu_media {
   display: flex;
   gap: 6rem;
 }
 
-footer .newsletter {
+.footer__newsletter {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
 }
 
-footer .newsletter h4 {
-  color: #f2f2f2;
+.footer__newsletter h4 {
+  color: var(--white-gray);
   text-align: center;
   font-family: "Kanit";
   font-size: 2rem;
   font-weight: 500;
 }
 
-footer .newsletter input {
+.footer__newsletter input {
   border-radius: 2.5rem;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--light-gray);
   padding: 0.8rem 2rem;
   background: transparent;
   width: 29rem;
   height: 3.9rem;
-  color: #d9d9d9;
+  color: var(--light-gray);
   font-family: "Kanit";
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.2875rem;
 }
 
-footer .newsletter input::placeholder {
-  color: #d9d9d9;
+.footer__newsletter input::placeholder {
+  color: var(--light-gray);
   font-family: "Kanit";
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.2875rem;
 }
 
-footer .newsletter .input-container {
+.footer__newsletter .footer__input_container {
   position: relative;
 }
 
-footer .newsletter img {
+.footer__newsletter img {
   position: absolute;
   top: 1.2rem;
   right: 2rem;
   cursor: pointer;
 }
 
-footer .copyright {
-  color: #b1b1b1;
+.footer__copyright {
+  color: var(--gray);
   font-family: "Kanit";
   font-size: 0.875rem;
   font-weight: 400;
@@ -676,63 +672,63 @@ footer .copyright {
     flex-direction: column;
   }
 
-  .mobile-menu {
+  .header__mobile_menu {
     position: fixed;
     width: 100vw;
     height: 100vh;
 
-    background: #28103e;
+    background: var(--dark-purple);
     top: 0;
     left: 0;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .background {
+  .testimonials__background {
     width: 100%;
   }
 
-  .mobile-menu span {
+  .header__mobile_menu span {
     position: absolute;
     right: 2rem;
     top: 0.5rem;
     font-size: 2rem;
-    color: white;
+    color: var(--white);
   }
 
-  .hero {
+  .header {
     width: 100%;
   }
 
-  .logo {
+  .header__logo {
     display: none;
   }
 
-  .logo-mobile {
+  .header__logo--mobile {
     display: block;
   }
 
-  .hamburguer-menu {
+  .header__hamburguer_menu {
     display: block;
   }
 
-  .title {
+  .hero__title {
     padding-right: 0;
     margin-top: 2rem;
   }
 
-  .title h1 {
+  .hero__title h1 {
     font-size: 2.25rem;
     line-height: 3rem;
   }
 
-  .title h2 {
+  .hero__title h2 {
     font-size: 2.25rem;
     line-height: 2.625rem;
   }
 
-  .title h3 {
-    color: #fff;
+  .hero__title h3 {
+    color: var(--white);
     text-align: right;
     font-size: 1rem;
     font-weight: 500;
@@ -740,7 +736,7 @@ footer .copyright {
     width: 200px;
   }
 
-  .title button {
+  .hero__title button {
     width: 13rem;
     height: auto;
     font-size: 1rem;
@@ -752,7 +748,7 @@ footer .copyright {
     padding: 1rem 0.8rem;
   }
 
-  .title button img {
+  .hero__title button img {
     height: 1rem;
   }
 
@@ -764,7 +760,7 @@ footer .copyright {
     display: none;
   }
 
-  .logos {
+  .about_us__logos {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
@@ -774,50 +770,50 @@ footer .copyright {
     width: 100vw;
   }
 
-  #about-us .container {
+  .about_us__container {
     margin-top: 1rem;
     padding: 0.5rem;
     width: 93%;
   }
 
-  #about-us .container .text h2 {
+  .about_us__text h2 {
     position: static;
     font-size: 2rem;
     text-align: left;
     line-height: normal;
   }
 
-  #about-us .container h2 span {
-    color: #333;
+  .about_us__container h2 span {
+    color: var(--dark-gray);
   }
 
-  #about-us .box .text img {
+  .about_us__text img {
     width: 100%;
     margin-top: 1.5rem;
   }
 
-  #about-us .paragraphs {
+  .about_us__paragraphs {
     position: static;
     margin-top: 1rem;
     width: auto;
     font-size: 1rem;
   }
 
-  #about-us .text p:first-child {
+  .about_us__text p:first-child {
     margin-top: 0;
   }
 
-  #about-us .box {
+  .about_us__box {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
-  .clients {
+  .about_us__clients {
     margin-top: 4.25rem;
   }
 
-  .clients h2 {
+  .about_us__clients h2 {
     font-size: 2rem;
 
     text-align: center;
@@ -833,20 +829,20 @@ footer .copyright {
     font-size: 2rem;
   }
 
-  #projects .count .box h2 {
+  .projects__box h2 {
     font-size: 4rem;
   }
 
-  #projects .count .box h3 {
+  .projects__box h3 {
     font-size: 1.25rem;
   }
 
-  #projects .item .border {
+  .projects__item .border {
     left: 0;
     border-radius: 1.875rem;
   }
 
-  #projects .item {
+  .projects__item {
     font-size: 1.25rem;
     border-radius: 1.875rem;
   }
@@ -866,13 +862,13 @@ footer .copyright {
     margin-top: 0;
   }
 
-  #projects .items {
+  .projects__items {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
   }
 
-  #projects .count {
+  .projects__count {
     width: 100%;
     margin: 0 auto;
     margin-top: 3rem;
@@ -880,19 +876,19 @@ footer .copyright {
     align-items: center;
   }
 
-  #projects .count .box {
+  .projects__box {
     align-items: center;
   }
 
-  #testimonials .arrows {
+  .testimonials__arrows {
     align-self: center;
   }
 
-  #testimonials .box {
+  .testimonials__box {
     margin-top: 0;
   }
 
-  #testimonials .box h2 {
+  .testimonials__box h2 {
     font-size: 2rem;
     text-align: center;
   }
@@ -901,7 +897,7 @@ footer .copyright {
     flex-direction: column;
   }
 
-  #cards .card {
+  .cards__card {
     height: 16rem;
   }
 
@@ -912,14 +908,14 @@ footer .copyright {
     width: 100%;
   }
 
-  #cards .card-container .data {
+  .card__data {
     display: grid;
     grid-template-areas:
       "a a"
       "b b";
   }
 
-  #cards .data .tag {
+  .card__tag {
     grid-area: b;
     padding: 0.3rem;
     margin-top: 1rem;
@@ -927,22 +923,22 @@ footer .copyright {
     font-size: 1rem;
   }
 
-  #cards .data p {
+  .card__data p {
     grid-area: a;
     font-size: 1rem;
   }
 
-  #testimonials .cards-testimonials {
+  .testimonials__cards {
     padding-left: 2rem;
   }
 
-  #testimonials .testimonial {
+  .testimonials__card {
     height: auto;
     width: 24rem;
     padding: 1.5rem;
   }
 
-  #testimonials .testimonial h4 {
+  .testimonials__card h4 {
     font-size: 1rem;
   }
 
@@ -971,31 +967,31 @@ footer .copyright {
     padding: 2.5rem;
   }
 
-  footer .menu-media {
+  .footer__menu_media {
     margin-bottom: 2rem;
     width: 100%;
   }
 
-  footer .menu,
-  footer .media {
+  .footer__menu,
+  .footer__media {
     width: 50%;
   }
 
-  footer .newsletter {
+  .footer__newsletter {
     display: none;
   }
 
-  footer .info p {
+  .footer__info p {
     margin-top: 1rem;
   }
 
-  footer .info p,
-  footer .info span {
+  .footer__info p,
+  .footer__info span {
     text-align: center;
     display: block;
   }
 
-  footer .address p {
+  .footer__address p {
     text-align: center;
   }
 }

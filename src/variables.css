@@ -1,15 +1,16 @@
 :root {
   --primary-color: #6c40e9;
   --secondary-color: #cfff11;
-  --dark-gray: #333333;
   --light-gray: #d9d9d9;
   --white-gray: #f2f2f2;
-  --primary-dark-color: #4d2c6b;
-  --yellow: #f2c94c;
-  --copy-gray: #b1b1b1;
-
-  --color-white-fixed: #ffffff;
-
+  --purple: #4d2c6b;
+  --dark-purple: #28103e;
+  --gold: #f2c94c;
+  --dark-gold: #e9ce40;
+  --gray: #b1b1b1;
+  --dark-gray: #333;
+  --white: #ffffff;
+  --almost-white: #f5f5f5;
   --primary-font: "Kanit", sans-serif;
   --secondary-font: "K2D", sans-serif;
 }
